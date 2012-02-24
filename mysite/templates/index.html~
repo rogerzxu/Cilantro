@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% comment %}
+
+Main page of django_consultant's website.
+
+{% endcomment %}
+
+{% block head %}
+    <title>Cilantro Course Management System</title>
+{% endblock %}
+
+{% block body %}
+    <header>
+        <h1>Cilantro Course Management System</h1>
+    </header>
+
+    <section>
+        <p>Welcome to Cilantro! Please click <a href="/portal/">here</a> to log into our web portal.
+	  <br />
+	  <img src ="cilantro.jpg" alt= "Cilantro!" /></p>
+
+    </section>
+{% endblock %}
+

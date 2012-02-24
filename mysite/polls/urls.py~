@@ -1,0 +1,8 @@
+from django.conf.urls.defaults import patterns, include, url
+
+urlpatterns = patterns('',
+    url(r'^$', 'mysite.polls.views.index'),
+    url(r'^(?P<poll_id>\d+)/$', 'mysite.polls.views.detail'),
+    url(r'^(?P<poll_id>\d+)/results/$', 'mysite.polls.views.results'),
+    url(r'^(?P<poll_id>\d+)/vote/$', 'mysite.polls.views.vote'),
+)

@@ -1,0 +1,9 @@
+# Create your views here.
+from django.shortcuts import render_to_response, get_object_or_404
+from django.http import HttpResponse
+from django.template import Context, loader
+
+def my_homepage_view(request):
+    html = "<html><a href = \"/login/\">Login</a></html>"
+    return HttpResponse(html)
+
