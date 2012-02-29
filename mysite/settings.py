@@ -139,6 +139,7 @@ INSTALLED_APPS = (
     'mysite.polls',
     'mysite.login',
     'mysite.portal',
+    'mysite.registration',
 
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',
