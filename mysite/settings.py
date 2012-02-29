@@ -127,8 +127,10 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.contrib.messages.context_processors.messages',
 )
 
+AUTH_PROFILE_MODULE = 'login.UserProfile'
 
 INSTALLED_APPS = (
+    
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -137,9 +139,9 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mysite.polls',
-    'mysite.login',
+    #'mysite.register',
+    #'mysite.login',
     'mysite.portal',
-    'mysite.registration',
 
     # Uncomment the next line to enable the admin:
     # 'django.contrib.admin',

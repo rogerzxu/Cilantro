@@ -1,8 +1,6 @@
 from django.conf.urls.defaults import *
 from django.conf.urls.static import static
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
-
-
 from mysite.views import my_homepage_view, logout_page
 
 # Uncomment the next two lines to enable the admin:
@@ -28,8 +26,8 @@ urlpatterns = patterns('',
     (r'^login/$', 'django.contrib.auth.views.login'),
     (r'^logout/$', logout_page),
     (r'^portal/', include('mysite.portal.urls')),
-    (r'^accounts/', include('mysite.registration.backends.default.urls')),
     (r'^$', my_homepage_view),
+    
   #  (r'^images/$', image_page),
    # (r'^static/', 'django.views.static.serve',
     #    {'document_root': 'static'}),
